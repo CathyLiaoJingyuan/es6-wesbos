@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>let and const</title>
+</head>
+
+<body>
+  <script>
+    // 3 ways to declare variable
+    // var can be redefined and updated , var variables are "function scope"
+    var width = 200;
+
+
+
+    function setWith() {
+      width = 100;
+      console.log("setWith" + width);
+
+    }
+    setWith()
+    console.log("Global width" + width)
+    var age = 100;
+    if (age > 12) {
+      const dogYears = age * 7;
+      console.log(`You are ${dogYears} dog years old!`);
+    }
+    // let and const are block scoped
+
+    let height = 200;
+    const key = "adb124";
+  </script>
+</body>
+
+</html>
